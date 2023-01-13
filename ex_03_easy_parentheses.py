@@ -1,22 +1,24 @@
 #  https://leetcode.com/problems/valid-parentheses/ 
 
-def isValid(s: str) -> bool:
+def isValid(string: str) -> bool:
     openings = '([{'
     stack = []
     checklist = False
     
-    for p in s:
-        if p in openings:
-            stack.append(p)
+    pairs = {
+    '(' : ')',
+    '[' : ']',
+    '{' : '}'
+    }
+
+    for parenthese in string:
+        if parenthese in openings:
+            stack.append(parenthese)
         else:
             if len(stack) == 0:
                 return False
             out_opening = stack.pop()
-            if out_opening == '(' and p == ')':
-                checklist = True
-            elif out_opening == '[' and p == ']':
-                checklist = True
-            elif out_opening == '{' and p == '}':
+            if pairs[out_opening] == parenthese:
                 checklist = True
             else:
                 checklist = False
@@ -27,9 +29,7 @@ def isValid(s: str) -> bool:
 
 # change the string to test other scenarios
 print(isValid("({}[])"))
-
-pairs = {
-    '(' : ')',
-    '[' : ']',
-    '{' : '}'
-}
+print(isValid("{}([])"))
+print(isValid("{[])"))
+print(isValid("({}"))
+print(isValid("(){"))
