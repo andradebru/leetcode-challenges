@@ -1,6 +1,8 @@
 # https://leetcode.com/problems/climbing-stairs/submissions/877755040/
 
-# this problem and its solution involves dinamic programming and fibonacci 
+# this problem and its solution involves dinamic programming and fibonacci
+# in this case we start in 1 because it's the minimum steps required 
+# to achieve the top of a stair
 
 def climbStairs(n: int) -> int:
     one = 1
