@@ -1,7 +1,7 @@
 # 10 LeetCode Problems challenge
 
 This challenge consisted in pick and resolve 10 problems from [leetcode](https://leetcode.com/): 6 easy, 2 medium and 2 hard.
-
+I used this problems to learn more about algorithms and data structure.
 The languages I chose to solve these problems are Python and JavaScript. Most of them are solved with Python, indeed.
 
 ## How to run the codes
@@ -15,7 +15,7 @@ The languages I chose to solve these problems are Python and JavaScript. Most of
 ## Desafio dos 10 problemas do LeetCode
 
 Este desafio consistia em escolher e resolver 10 problemas do [leetcode](https://leetcode.com/): 6 fáceis, 2 médios e 2 difíceis.
-
+Usei esse desafio para aprender mais sobre algoritmos e estrutura de dados.
 As linguagens que escolhi para resolver esses problemas são Python e JavaScript. A maioria deles é resolvida com Python, na real.
 
 ### Como executar os códigos
