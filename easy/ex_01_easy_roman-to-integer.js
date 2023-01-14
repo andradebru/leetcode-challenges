@@ -35,3 +35,9 @@ var romanToInt = function(string) {
     return result
 };
 
+// change string to test other scenarios
+
+console.log(romanToInt('XVII'))
+console.log(romanToInt('IX'))
+console.log(romanToInt('V'))
+console.log(romanToInt('DCIVXX'))
