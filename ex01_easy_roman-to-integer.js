@@ -1,10 +1,10 @@
 // https://leetcode.com/problems/roman-to-integer/description/
 
 /**
- * @param {string} s
+ * @param {string} string
  * @return {number}
  */
-var romanToInt = function(s) {
+var romanToInt = function(string) {
     var numbersMap = new Map(
         [
             ["I", 1],
@@ -17,20 +17,21 @@ var romanToInt = function(s) {
         ]
     )
 
-    i = s.length - 1
+    i = string.length - 1
     result = 0
 
     for (i; i >= 0; i--) {
         if (i == 0) {
-            result += numbersMap.get(s[i])
+            result += numbersMap.get(string[i])
         }
-        else if (numbersMap.get(s[i]) > numbersMap.get(s[i - 1])) {
-            result += numbersMap.get(s[i]) - numbersMap.get(s[i - 1])
+        else if (numbersMap.get(string[i]) > numbersMap.get(string[i - 1])) {
+            result += numbersMap.get(string[i]) - numbersMap.get(string[i - 1])
             i--
         } else {
-            result += numbersMap.get(s[i])
+            result += numbersMap.get(string[i])
         }
     }
     
     return result
 };
+
